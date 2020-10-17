@@ -14,41 +14,8 @@ Netlify: Build, deploy and CI/CD with github
 Netlify functions: Serverless computing
 Netlify Identity: Login/Signup
 
-### Airtable Setup:
-
-In airtable database equivalents are bases. Each base can have multiple tables.
-1. Sign up for a free account
-2. Create a new “base” (start from scratch)
-3. Define two new table for storing discussion topics and comments
-
-![](img/airtable-base.png)
-
-You will see a spreadsheet like user interface. Create the following tables and their columns as defined below:
-
-Table1: Topics:
-`id: Autonumber
-topic: Single line text
-name: Single line text`
-
-Table2: Comments: 
-`id: Autonumber
-comment: Long text
-topic_id: Number (Integer(2))
-name: Single line text`
-
-Note: The table/column names are case sensitive
-
-![](img/airtable-tables.png)
-
-
-Once you do that go to https://airtable.com/api and select your base and voila you will see an api documentation for your base and tables. 
-
-There is a checkbox on top right to show your API key. Click on that and you will see your api key in the highlighted text of the screenshot and your base id like base("baseId").
-
-![](img/airtable-documentation.png)
-
-Note: Airtable API’s have a Rate limit of only 5 requests per second as of now which make it unfit for applications like a discussion board. Alternatively, you can go with faunadb or dynamodb for such use cases.
-
+### Fauna DB
+In this version we are going to use faunaDB. Will add the details soon.
 
 ### Project Setup:
 To quickly set up the project, clone the repository. 
